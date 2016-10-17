@@ -74,6 +74,7 @@ public class FrmMain extends java.awt.Frame {
   
   private boolean validation(int pos){
       Offre o =(Offre)listeOffres.get(pos);
+      System.out.println("SALOPE");
       return tfNom.getText().length()>0 && tfPrenom.getText().length()>0 && tfEMail.getText().length()>0 && o.getMaxInscrits()>listeClients.size();
       
   }
